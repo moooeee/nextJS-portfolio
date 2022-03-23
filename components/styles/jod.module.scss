@@ -1,0 +1,68 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: var(--primary-font-color);
+
+  .showJokeBtn {
+    padding: 10px 25px;
+    border: none;
+    // background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    max-width: 250px;
+    border: 1px solid black;
+  }
+
+  .joke {
+    font-size: 26px;
+    text-align: center;
+
+    .jodTitle {
+      font-size: 22px;
+    }
+  }
+
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .feedbackQ {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .feedbackReaction {
+      button {
+        border: none;
+        background: none;
+        font-size: 26px;
+        transition: 0.1s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.4);
+        }
+
+        &:active {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .myReactionOnTheirFeedbackLol {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .showJokeBtn {
+      font-size: 16px;
+    }
+  }
+}

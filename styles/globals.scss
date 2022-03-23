@@ -1,0 +1,96 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --red: #ca2c2b;
+  --white: #f8f7f7;
+  --yellow: #f5ce33;
+  --black: #1c1614;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  overflow-x: hidden;
+  transition: 0.3s ease;
+
+  &.theme1 {
+    --primary-bg-color: #ca2c2b;
+    --primary-font-color: #f8f7f7;
+
+    --secondary-bg-color: #f8f7f7;
+    --secondary-font-color: #1c1614;
+
+    --heading-bg-color: #f5ce33;
+    --heading-box-shadow-color: #1c1614;
+
+    --tag-bg-color: #1c161418;
+    --tag-border-color: #1c161407;
+  }
+
+  &.theme2 {
+    --primary-bg-color: #ffdb59;
+    --primary-font-color: #121213;
+
+    --secondary-bg-color: #f8f7f7;
+    --secondary-font-color: #1c1614;
+
+    --heading-bg-color: #ffed9b;
+    --heading-box-shadow-color: #1c1614;
+
+    --tag-bg-color: #1c161418;
+    --tag-border-color: #1c161407;
+  }
+
+  &.theme3 {
+    --primary-bg-color: #fff;
+    --primary-font-color: #374696;
+
+    --secondary-bg-color: #fff;
+    --secondary-font-color: #374696;
+
+    --heading-bg-color: #fff;
+    --heading-box-shadow-color: #374696;
+
+    --tag-bg-color: #19141418;
+    --tag-border-color: #19141407;
+
+    //////
+
+    // --primary-bg-color: #87ceeb;
+    // --primary-font-color: #191414;
+
+    // --secondary-bg-color: #f8f7f7;
+    // --secondary-font-color: #191414;
+
+    // --heading-bg-color: #e8fdfe;
+    // --heading-box-shadow-color: #191414;
+
+    // --tag-bg-color: #19141418;
+    // --tag-border-color: #19141407;
+  }
+
+  &.theme4 {
+    --primary-bg-color: #e9ffe8;
+    --primary-font-color: #f04f32;
+
+    --secondary-bg-color: #fcfffa;
+    --secondary-font-color: #f04f32;
+
+    --heading-bg-color: #fcfffa;
+    --heading-box-shadow-color: #1c1614;
+
+    --tag-bg-color: #1c161418;
+    --tag-border-color: #1c161407;
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  > * {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+}

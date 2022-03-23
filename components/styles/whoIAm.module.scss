@@ -1,0 +1,35 @@
+.container {
+  padding: 0 3.7rem;
+  margin-top: 10px;
+
+  h1 {
+    font-size: 100px;
+    line-height: 1;
+    // color: var(--white);
+    color: var(--primary-font-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+  }
+
+  p {
+    // color: var(--white);
+    color: var(--primary-font-color);
+    font-size: 40px;
+    margin: 0;
+    opacity: 0.85;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 0;
+    max-width: calc(100% - 20px);
+
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+}
