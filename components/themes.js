@@ -1,14 +1,19 @@
 import { useEffect } from "react"
 import styles from "./styles/themes.module.scss"
 
+const themes = ["#ca2c2b", "#ffdb59", "#374696", "#f04f32"]
+
 function Themes() {
   useEffect(() => {
     const theme = localStorage.getItem("$$$myTheme$$$")
     if (!theme) {
       localStorage.setItem("$$$myTheme$$$", "theme1")
       document.body.classList = "theme1"
+      document.getElementsByClassName("meta-theme")[0].content = themes[0]
     } else {
       document.body.classList = theme
+      document.getElementsByClassName("meta-theme")[0].content =
+        themes[+theme.charAt(theme.length - 1) - 1]
     }
   }, [])
 
