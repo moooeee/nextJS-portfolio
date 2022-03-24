@@ -14,6 +14,7 @@ function Home() {
       <Head>
         <title>Create Next App</title>
         <meta name="description" content="blah blah blah" />
+        <meta name="theme-color" className="meta-theme" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
