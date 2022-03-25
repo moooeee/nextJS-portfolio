@@ -13,7 +13,7 @@ function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <meta name="description" content="blah blah blah" />
+        <meta name="description" content="My Portfolio" />
         <meta name="theme-color" className="meta-theme" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
