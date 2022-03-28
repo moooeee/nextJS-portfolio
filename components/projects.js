@@ -61,7 +61,7 @@ const myProjects = [
       "The official page of Frame Inc. featuring all the services and courses the company has to offer, with an engaging layout and animations, I was solely responsible for developing this website from square one",
     techStack: ["Webpack", "SASS", "Netlify"],
     websiteUrl: "https://frame-v3.netlify.app/",
-    githubRepo: "https://github.com/moooeee/Frame-Landing-Page",
+    githubRepo: "https://github.com/moooeee/frame-website",
   },
   {
     name: "Gatsby Blog and Portfolio",
@@ -69,7 +69,7 @@ const myProjects = [
       "My old Gatsby portfolio that i used to display personal projects as well as a platform to write articles about tech stuff· Full-featured blog platform with code highlighting, quotes, illustrative pictures and more, all built from the ground up",
     techStack: ["Gatsby", "React", "Styled Components", "MDX", "Netlify"],
     websiteUrl: "https://moe-dev.netlify.app/",
-    githubRepo: "https://github.com/moooeee/Portfolio",
+    githubRepo: "https://github.com/moooeee/gatsby-portfolio",
   },
   {
     name: "Sracastic News",
