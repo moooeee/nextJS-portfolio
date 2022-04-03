@@ -24,7 +24,7 @@ function JokeOfTheDay() {
     <div className={styles.container}>
       {!showJod && (
         <button className={styles.showJokeBtn} onClick={() => setShowJod(true)}>
-          got time for a joke?
+          Got time for a joke?
         </button>
       )}
       {showJod && (
@@ -35,7 +35,7 @@ function JokeOfTheDay() {
       )}
       {showJod && (
         <div className={styles.feedback}>
-          <div className={styles.feedbackQ}>do you like it?</div>
+          <div className={styles.feedbackQ}>Do you like it?</div>
           <div
             className={styles.feedbackReaction}
             style={{ display: "flex", gap: "15px" }}
@@ -48,7 +48,7 @@ function JokeOfTheDay() {
           </div>
           {showReaction && (
             <div className={styles.myReactionOnTheirFeedbackLol}>
-              i really dont care 😝
+              I really dont care 😝
             </div>
           )}
         </div>
