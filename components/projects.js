@@ -4,6 +4,8 @@ import Link from "next/link"
 import { GoMarkGithub, GoLinkExternal } from "react-icons/go"
 import { FiExternalLink } from "react-icons/fi"
 import { useState } from "react"
+import HrLine from "./hrLine"
+import Underline from "./underline"
 
 const myProjects = [
   {
@@ -167,17 +169,7 @@ function Projects() {
     <article className={styles.container}>
       <div className={styles.headingWrapper}>
         <h2>
-          Projects{" "}
-          <svg width="126.203" height="74" viewBox="-1 -1 2 2">
-            <path
-              pathLength="100"
-              vectorEffect="non-scaling-stroke"
-              style={{ visibility: "visible" }}
-              d="M0.39930715404020306,-0.8065691518600954 C-0.04585047916476612,-1.0269527695628233 -0.7231657265541155,-0.6012619767129185 -0.808679289644498,-0.15493972676098486 S-0.49428834567475977,0.7464606972552671 -0.06308817149160519,0.781280006969338 S0.7356730644568209,0.24961445760001347 0.6695019230867952,-0.11989371267921516 S0.1293730678105907,-0.7406542272072596 -0.21416751867257897,-0.6224519558932642"
-              strokeDasharray="5642.287254333496"
-              strokeDashoffset="5642.287254333496"
-            ></path>
-          </svg>
+          Projects <Underline />
         </h2>
       </div>
       <ul>
@@ -198,7 +190,9 @@ function Projects() {
         )}
         {showMore && (
           <>
-            <div className={styles.hrLine}></div>
+            <div className={styles.hrLine}>
+              <HrLine />
+            </div>
             {Array(myProjects.length - 4)
               .fill(null)
               .map((_, i) => {
