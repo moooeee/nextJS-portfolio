@@ -21,9 +21,13 @@
   }
 
   @media screen and (max-width: 700px) {
+    h4 {
+      font-size: 20px;
+    }
     .techStackList {
       li {
         min-width: 40%;
+        font-size: 18px;
       }
     }
   }
