@@ -26,6 +26,7 @@ function Themes() {
           document.getElementsByClassName("meta-theme")[0].content = "#ca2c2b"
         }}
         className={styles.theme1}
+        aria-label="switch to red theme"
       />
       <button
         onClick={() => {
@@ -34,6 +35,7 @@ function Themes() {
           document.getElementsByClassName("meta-theme")[0].content = "#ffdb59"
         }}
         className={styles.theme2}
+        aria-label="switch to yellow theme"
       />
       <button
         onClick={() => {
@@ -42,6 +44,7 @@ function Themes() {
           document.getElementsByClassName("meta-theme")[0].content = "#374696"
         }}
         className={styles.theme3}
+        aria-label="switch to blue theme"
       />
       <button
         onClick={() => {
@@ -50,6 +53,7 @@ function Themes() {
           document.getElementsByClassName("meta-theme")[0].content = "#f04f32"
         }}
         className={styles.theme4}
+        aria-label="switch to light green theme"
       />
     </div>
   )

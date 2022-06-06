@@ -1,0 +1,39 @@
+.container {
+  color: var(--primary-font-color);
+
+  h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+
+  .techStackList {
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+
+    li {
+      white-space: nowrap;
+      min-width: 30%;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .techStackList {
+      li {
+        min-width: 40%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .techStackList {
+      padding: 0 20px;
+      li {
+        min-width: 100%;
+      }
+    }
+  }
+}

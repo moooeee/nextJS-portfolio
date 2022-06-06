@@ -7,6 +7,8 @@ import Projects from "../components/projects"
 import Footer from "../components/footer"
 import Themes from "../components/themes"
 import JokeOfTheDay from "../components/jokeOfTheDay"
+import AboutMe from "../components/aboutMe"
+import TechStack from "../components/techStack"
 
 function Home() {
   return (
@@ -22,6 +24,8 @@ function Home() {
       <Themes />
       <main>
         <WhoIAm />
+        <AboutMe />
+        <TechStack />
         <Projects />
       </main>
       <JokeOfTheDay />

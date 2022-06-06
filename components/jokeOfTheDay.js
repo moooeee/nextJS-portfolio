@@ -23,12 +23,18 @@ function JokeOfTheDay() {
   return (
     <div className={styles.container}>
       {!showJod && (
-        <button className={styles.showJokeBtn} onClick={() => setShowJod(true)}>
+        <button
+          aria-expanded={showJod}
+          aria-controls="joke-of-the-day"
+          aria-label="hear joke of the day"
+          className={styles.showJokeBtn}
+          onClick={() => setShowJod(true)}
+        >
           Got time for a joke?
         </button>
       )}
       {showJod && (
-        <div className={styles.joke}>
+        <div id="joke-of-the-day" role="region" className={styles.joke}>
           <div className={styles.jodTitle}>Joke Of The Day</div>
           <div className={styles.jodJoke}>{jod}</div>
         </div>

@@ -8,7 +8,6 @@ function HrLine({ className }) {
       xmlns="http://www.w3.org/2000/svg"
       style={{
         border: "none",
-        // width: 70%,
         margin: "auto",
         marginTop: "5%",
         marginBottom: "5%",
@@ -20,6 +19,7 @@ function HrLine({ className }) {
         backgroundPosition: "center",
       }}
       className={className}
+      aria-hidden="true"
     >
       <path
         fillRule="evenodd"

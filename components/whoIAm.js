@@ -6,7 +6,7 @@ function WhoIAm() {
       <h1>
         Hi!{" "}
         <span>
-          <img src="/waving-hand.png" alt="waving hand" />
+          <img src="/waving-hand.png" alt="waving hand" aria-hidden="true" />
         </span>
         <br />I am Mohamed
       </h1>

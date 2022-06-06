@@ -6,6 +6,7 @@ import { FiExternalLink } from "react-icons/fi"
 import { useState } from "react"
 import HrLine from "./hrLine"
 import Underline from "./underline"
+import Section from "./section"
 
 const myProjects = [
   {
@@ -128,7 +129,11 @@ function Project({ project }) {
           </div>
           <div className={styles.githubUrl}>
             <Link href={githubRepo}>
-              <a title="Opens in a new tab" target="_blank">
+              <a
+                aria-label="view source"
+                title="Opens in a new tab"
+                target="_blank"
+              >
                 <GoMarkGithub size={20} />
               </a>
             </Link>
@@ -147,12 +152,20 @@ function ProjectMini({ project }) {
           <span>{project.name}</span>
           <div className={styles.urls}>
             <Link href={project.webkitURL}>
-              <a title="Opens in a new tab" target="_blank">
+              <a
+                aria-label="view live"
+                title="Opens in a new tab"
+                target="_blank"
+              >
                 <FiExternalLink size={20} />
               </a>
             </Link>
             <Link href={project.githubRepo}>
-              <a title="Opens in a new tab" target="_blank">
+              <a
+                aria-label="view source"
+                title="Opens in a new tab"
+                target="_blank"
+              >
                 <GoMarkGithub size={20} />
               </a>
             </Link>
@@ -166,13 +179,8 @@ function ProjectMini({ project }) {
 function Projects() {
   const [showMore, setShowMore] = useState(false)
   return (
-    <article className={styles.container}>
-      <div className={styles.headingWrapper}>
-        <h2>
-          Projects <Underline />
-        </h2>
-      </div>
-      <ul>
+    <Section title="Projects">
+      <ul className={styles.projectsList}>
         {Array(4)
           .fill(null)
           .map((_, i) => {
@@ -183,13 +191,21 @@ function Projects() {
             <button
               className={styles.showMoreBtn}
               onClick={() => setShowMore(true)}
+              aria-expanded={!showMore}
+              aria-controls="additional-projects"
+              aria-label="show more projects"
             >
               Show More
             </button>
           </div>
         )}
         {showMore && (
-          <>
+          <ul
+            role="region"
+            aria-label="additional projects list"
+            className={styles.additionalProjects}
+            id="additional-projects"
+          >
             <div className={styles.hrLine}>
               <HrLine />
             </div>
@@ -204,17 +220,15 @@ function Projects() {
                   />
                 )
               })}
-            <ul
-              style={{ display: "flex", flexDirection: "column", gap: "30px" }}
-            >
+            <ul className={styles.miniProjects}>
               {previousProjects.map((project) => {
                 return <ProjectMini key={project.name} project={project} />
               })}
             </ul>
-          </>
+          </ul>
         )}
       </ul>
-    </article>
+    </Section>
   )
 }
 

@@ -1,73 +1,47 @@
-.container {
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  max-width: 1025px;
+.projectsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-  .headingWrapper {
-    h2 {
+  .showMoreBtnWrapper {
+    text-align: center;
+
+    .showMoreBtn {
+      font-family: inherit;
+      background: none;
+      border: none;
+      font-size: 24px;
+      text-decoration: underline;
+      cursor: pointer;
       color: var(--primary-font-color);
-      font-size: 37px;
-      position: relative;
-      display: inline-block;
-      margin: 0;
-      text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
-      padding: 0 20px;
-      margin-bottom: 50px;
 
-      svg {
-        position: absolute;
-        top: 5%;
-        left: 0;
-        width: 100%;
-        height: 120px;
+      &:hover {
+        text-decoration: none;
       }
     }
   }
 
-  ul {
+  .additionalProjects {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .hrLine {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 37px;
+  }
+
+  .miniProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
-
-    .showMoreBtnWrapper {
-      text-align: center;
-
-      .showMoreBtn {
-        font-family: inherit;
-        background: none;
-        border: none;
-        font-size: 24px;
-        text-decoration: underline;
-        cursor: pointer;
-        color: var(--primary-font-color);
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-
-    .hrLine {
-      margin: auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      width: 150px;
-      height: 37px;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    .headingWrapper {
-      h2 {
-        font-size: 30px;
-        margin-bottom: 20px;
-
-        svg {
-          top: -10%;
-        }
-      }
-    }
   }
 }
 
@@ -155,6 +129,9 @@
         }
 
         ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
           display: flex;
           gap: 10px;
           margin-top: 30px;
