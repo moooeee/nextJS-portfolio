@@ -10,11 +10,6 @@ function AboutMe() {
           frontend products with great and fluent user experiences.
         </div>
         <div className={styles.paragraph}>
-          I&apos;ve built products for companies and businesses around the globe
-          ranging from marketing websites to complex solutions and enterprise
-          apps with focus on fast, elegant and accessible user experiences.
-        </div>
-        <div className={styles.paragraph}>
           Typically I&apos;ll be digging in with React, architecting CSS in and
           out of JavaScript, or orchestrating animations with Framer. I thrive
           on bringing ideas to life and delivering eye-catching results. All
