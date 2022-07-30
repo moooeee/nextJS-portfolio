@@ -63,8 +63,8 @@ const myProjects = [
     description:
       "The official page of Frame Inc. featuring all the services and courses the company has to offer, with an engaging layout and animations, I was solely responsible for developing this website from square one",
     techStack: ["Webpack", "SASS", "Netlify"],
-    websiteUrl: "https://frame-v3.netlify.app/",
-    githubRepo: "https://github.com/moooeee/frame-website",
+    websiteUrl: "https://frame-co.vercel.app/",
+    githubRepo: "https://github.com/moooeee/Frame-Co",
   },
   {
     name: "Gatsby Blog and Portfolio",
